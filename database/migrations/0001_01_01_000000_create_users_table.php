@@ -9,6 +9,7 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
+    //Por defecto laravel crea este archivo de migraciones para los usuarios
     public function up(): void
     {
         Schema::create('users', function (Blueprint $table) {
@@ -17,8 +18,10 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('profile_image')->nullable();
             $table->rememberToken();
             $table->timestamps();
+           
         });
 
         Schema::create('password_reset_tokens', function (Blueprint $table) {
@@ -26,7 +29,7 @@ return new class extends Migration
             $table->string('token');
             $table->timestamp('created_at')->nullable();
         });
-
+//Esta tabla sesions nos servira para identificar cual es el usuario logeado al crear una cadena de texto unica para cada usuario
         Schema::create('sessions', function (Blueprint $table) {
             $table->string('id')->primary();
             $table->foreignId('user_id')->nullable()->index();

@@ -22,6 +22,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'profile_image'
     ];
 
     /**
@@ -45,5 +46,12 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    // RELACIÓN: Un usuario tiene muchas tareas
+    public function tareas()
+    {
+        // Esto busca en el modelo Tareas
+        return $this->hasMany(Tareas::class, 'user_id'); 
     }
 }
