@@ -51,5 +51,5 @@
 @endsection
 <!--Con push scripts estamos colocando este script en  nuestro archivo app.blade para que funcionen el codigo jquery y ajax que pusimos aqui-->
 @push('scripts')
-    <script src="{{ asset('js/auth.js') }}"></script>
+    <script src="{{ secure_asset('js/auth.js') }}"></script>
 @endpush
