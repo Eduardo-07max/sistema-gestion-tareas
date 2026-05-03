@@ -1,6 +1,6 @@
 # 📝 TaskManager - Sistema de Gestión de Tareas Profesional
 
-¡Bienvenido! Este es un sistema integral de gestión de tareas desarrollado con **Laravel 11** y **Bootstrap 5**. El proyecto ha sido diseñado bajo estándares profesionales de programación, aplicando el principio de responsabilidad única y una interfaz de usuario limpia y adaptativa.
+¡Bienvenido! Este es un sistema integral de gestión de tareas desarrollado con **Laravel 12** y **Bootstrap 5**. El proyecto ha sido diseñado bajo estándares profesionales de programación, aplicando el principio de responsabilidad única y una interfaz de usuario limpia y adaptativa.
 
 ## 🚀 Características principales
 *   **Gestión de Tareas (CRUD):** Organización dinámica de pendientes con asignación de prioridades.
