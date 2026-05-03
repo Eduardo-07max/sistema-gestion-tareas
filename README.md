@@ -10,7 +10,7 @@
 *   **Seguridad Avanzada:** Módulo dedicado para el cambio de contraseña con validación de la credencial actual y encriptación Hash.
 
 ## 🛠️ Stack Tecnológico
-*   **Backend:** PHP 8.2+ & Laravel 11.
+*   **Backend:** PHP 8.2+ & Laravel 12.
 *   **Frontend:** Blade Templates, Bootstrap 5, Bootstrap Icons.
 *   **Base de Datos:** MySQL / SQLite.
 *   **Arquitectura:** Controladores separados para Auth y Perfil (Clean Code).
